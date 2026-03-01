@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>5. Yıl Dönümümüz ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="fx-layer" id="floatingLayer"></div>
+
+<button class="musicBtn" id="musicBtn">🔊</button>
+
+<main class="app">
+
+  <!-- INTRO -->
+  <div class="intro is-open" id="intro">
+    <div class="introCard">
+      <div class="introTitle">Hazır mısın? 💗</div>
+      <div class="introText">
+        5 yılımıza küçük bir yolculuk…<br>
+        Seninle yeniden.
+      </div>
+      <button class="btn primary" id="btnIntro">Evet 💞</button>
+    </div>
+  </div>
+
+  <!-- ANA SAYFA -->
+  <section class="screen is-active" id="screenHome">
+    <div class="card home">
+      <h1>5. Yılımız Kutlu Olsun Sevgilim ❤️</h1>
+
+      <div class="counterCard">
+        <div class="counterTop">
+          <div>Başlangıç Tarihimiz</div>
+          <div>07.04.2021</div>
+        </div>
+
+        <div class="counterGrid">
+          <div class="counterItem">
+            <div class="counterNum" id="cYears">—</div>
+            <div class="counterTxt">Yıl</div>
+          </div>
+          <div class="counterItem">
+            <div class="counterNum" id="cMonths">—</div>
+            <div class="counterTxt">Ay</div>
+          </div>
+          <div class="counterItem">
+            <div class="counterNum" id="cDays">—</div>
+            <div class="counterTxt">Gün</div>
+          </div>
+        </div>
+
+        <div class="counterBottom">
+          <div class="counterPill">Birlikte: <b id="cTotalDays">—</b> gün 💞</div>
+          <div class="counterPill">Ve hâlâ ilk gün gibi ♾️</div>
+        </div>
+      </div>
+
+      <p class="subtitle">
+        Tam 5 yıl… Birlikte büyüdüğümüz, birlikte güldüğümüz, birlikte güçlendiğimiz 5 güzel yıl.
+      </p>
+
+      <div class="btnRow">
+        <button class="btn primary" id="btnStart">Anılarımıza Bakalım 📸</button>
+        <button class="btn ghost" id="btnToMessage">Sana Bir Mesajım Var 💌</button>
+      </div>
+
+      <div class="miniHint">5 yıldır kalbim seninle 🤍</div>
+    </div>
+  </section>
+
+  <!-- GALERİ -->
+  <section class="screen" id="screenGallery">
+    <div class="topbar">
+      <button class="btn ghost" data-go="home">← Geri</button>
+      <div class="topTitle">Anılarımız 📸</div>
+      <button class="btn primary" data-go="message">Devam →</button>
+    </div>
+
+    <div class="galleryGrid">
+      <div class="photoCard">
+        <img src="assets/photos/1.jpg" alt="">
+        <div class="overlay">
+          <div class="ovTitle">Birlikte ilk tatilimiz</div>
+          <div class="ovSub">Oradaki tek manzara sendin ❤️</div>
+        </div>
+        <div class="heartBadge">♥</div>
+      </div>
+
+      <div class="photoCard">
+        <img src="assets/photos/2.jpg" alt="">
+        <div class="overlay">
+          <div class="ovTitle">Gülüşün her şeye değer</div>
+          <div class="ovSub">Bugün de yarın da 💞</div>
+        </div>
+        <div class="heartBadge">♥</div>
+      </div>
+
+      <div class="photoCard">
+        <img src="assets/photos/3.jpg" alt="">
+        <div class="overlay">
+          <div class="ovTitle">Yol arkadaşım</div>
+          <div class="ovSub">Her anım seninle güzel ✨</div>
+        </div>
+        <div class="heartBadge">♥</div>
+      </div>
+
+      <div class="photoCard">
+        <img src="assets/photos/4.jpg" alt="">
+        <div class="overlay">
+          <div class="ovTitle">Huzur</div>
+          <div class="ovSub">Yanında her şey kolay 🫶</div>
+        </div>
+        <div class="heartBadge">♥</div>
+      </div>
+
+      <div class="photoCard">
+        <img src="assets/photos/5.jpg" alt="">
+        <div class="overlay">
+          <div class="ovTitle">Birlikte gülmek</div>
+          <div class="ovSub">Gülüşünde kayboluyorum ❤️</div>
+        </div>
+        <div class="heartBadge">♥</div>
+      </div>
+
+      <div class="photoCard">
+        <img src="assets/photos/6.jpg" alt="">
+        <div class="overlay">
+          <div class="ovTitle">Bir ömür gibi</div>
+          <div class="ovSub">Daha niceleri 💓</div>
+        </div>
+        <div class="heartBadge">♥</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESAJ -->
+  <section class="screen" id="screenMessage">
+    <div class="topbar">
+      <button class="btn ghost" data-go="gallery">← Geri</button>
+      <div class="topTitle">Sana Özel 💜</div>
+      <button class="btn ghost" data-go="home">Ana Sayfa</button>
+    </div>
+
+    <div class="card message">
+      <h2>5 Yıl… ve Daha Niceleri</h2>
+
+      <!-- ÖNEMLİ: Typing efekti bu data-text'ten okuyor -->
+      <p class="type" id="type1" data-text="Tam 5 yıl oldu.&#10;&#10;Birlikte büyüdük, değiştik, öğrendik.&#10;Ama bir şey hiç değişmedi:&#10;Sana olan sevgim. ❤️&#10;&#10;Hayat bazen kolay olmadı.&#10;Ama sen yanımdayken her şey daha katlanılabilir oldu.&#10;&#10;Birlikte olduğumuz ilk andan beri geçen her saniye için teşekkür ederim.&#10;İyi ki biz olduk.&#10;&#10;Sonsuza kadar seninle 💞"></p>
+
+      <div class="signature">— Sonsuza kadar seninle ❤️</div>
+      <div class="emojis big">💗 💞 ♾️ ❤️</div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOTO BÜYÜTME -->
+<div class="lightbox" id="lightbox">
+  <img id="lightboxImg" alt="">
+</div>
+
+<audio id="bgMusic" src="assets/audio/music.mp3" preload="auto" loop></audio>
+<script src="script.js"></script>
+</body>
+</html>
